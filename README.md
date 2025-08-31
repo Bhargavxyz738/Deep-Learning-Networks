@@ -28,7 +28,7 @@ Of course. Here is the completed final section for your main repository `README.
 
 # Sub-Repositories
 
-### 1. Advanced MNIST Sequence Recognizer
+### 1. `Image Recognition (MINST)`
 
 This project goes beyond standard digit classification to tackle the recognition of variable-length sequences (1, 2, or 3 digits) of handwritten numbers. It documents the complete machine learning engineering lifecycle: starting with a baseline CNN, diagnosing overfitting using a validation set, and systematically applying advanced techniques to achieve high performance.
 
