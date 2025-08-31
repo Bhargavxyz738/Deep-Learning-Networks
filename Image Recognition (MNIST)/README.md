@@ -65,7 +65,7 @@ pip install torch torchvision numpy matplotlib
 ```bash
 python train.py
 ```
-The script will automatically download the MNIST dataset, build the model, and begin the training process. You will see live progress in your terminal, including epoch-by-epoch loss, validation results, and notifications when the learning rate is adjusted or the best model is saved.
+The script will automatically download the MNIST dataset, build the model, and begin the training process. You will see live progress in your terminal, including epoch-by-epoch loss, validation results, and notifications when the learning rate is adjusted or the best model is saved. The script will also ask you if should continue after every 5 epoch, so you get the fine grained manual control as well.
 
 After training is complete, the script will load the best-performing model, evaluate it on the test set to print the final accuracy, and display a visualization of sample predictions.
 
