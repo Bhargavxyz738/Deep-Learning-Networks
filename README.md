@@ -23,3 +23,15 @@ The main goal of this repository is to document and summarize all of the AI/ML p
 
 ## Vision  
 This repository is not just a collection of code, but a journey in deep learning—covering everything from fundamental applications to innovative approaches that may lead to new architectures or optimization methods. It embodies my curiosity, persistence, and excitement for advancing in the world of AI.  
+
+Of course. Here is the completed final section for your main repository `README.md`.
+
+# Sub-Repositories
+
+### 1. Advanced MNIST Sequence Recognizer
+
+This project goes beyond standard digit classification to tackle the recognition of variable-length sequences (1, 2, or 3 digits) of handwritten numbers. It documents the complete machine learning engineering lifecycle: starting with a baseline CNN, diagnosing overfitting using a validation set, and systematically applying advanced techniques to achieve high performance.
+
+-   **Architecture:** A deep, multi-head CNN with Dropout for regularization.
+-   **Key Techniques:** Data Augmentation, Adaptive Learning Rate Scheduling (`ReduceLROnPlateau`), and Early Stopping.
+-   **Outcome:** Achieved a final **99.25% exact sequence match accuracy** on the test set (can be high or low for you).
