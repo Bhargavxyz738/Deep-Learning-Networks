@@ -128,7 +128,7 @@ test_loader = DataLoader(test_dataset, batch_size=CONFIG["batch_size"], shuffle=
 model = CNN_VariableDigit(max_digits=CONFIG["max_digits"], n_classes=CONFIG["n_classes"]).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=CONFIG["lr"])
-scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2)
+scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2) # I didnt add verbose = True as it is not supported on some older version of torch. 
 
 patience = 5
 epochs_no_improve = 0
@@ -166,7 +166,11 @@ for epoch in range(CONFIG["epochs"]):
 
     print(f"Epoch [{epoch+1}/{CONFIG['epochs']}], Train Loss: {epoch_train_loss:.4f}, Val Loss: {epoch_val_loss:.4f}")
 
+    old_lr = optimizer.param_groups[0]['lr']
     scheduler.step(epoch_val_loss)
+    new_lr = optimizer.param_groups[0]['lr']
+    if new_lr < old_lr:
+        print(f"Learning rate reduced from {old_lr} to {new_lr}")
 
     if epoch_val_loss < best_val_loss:
         best_val_loss = epoch_val_loss
