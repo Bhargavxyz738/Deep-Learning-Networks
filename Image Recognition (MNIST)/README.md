@@ -71,8 +71,8 @@ After training is complete, the script will load the best-performing model, eval
 
 ### :warning: Note on Computational Requirements
 This is a deep learning model that is computationally expensive to train.
-*   **GPU Recommended:** Training is **highly recommended** on a machine with a CUDA-enabled GPU. The script will automatically use the GPU if it is available. ( 20 epoch is expected to complete within 30-40 mins)
-*   **Time Consuming:** Training on a GPU can take a significant amount of time (e.g.,  2hr - 3hr, depending on the hardware). Training on a CPU will be exceptionally slow and may take several hours to complete.
+*   **GPU Recommended:** Training is **highly recommended** on a machine with a CUDA-enabled GPU. The script will automatically use the GPU if it is available.
+*   **Time Consuming:** Training on a GPU can take a significant amount of time (e.g.,  20 to 30mins , depending on the hardware). Training on a CPU will be exceptionally slow and may take several hours to complete(e.g., 4hr to 6hr).
 
 ## Conclusion
 
