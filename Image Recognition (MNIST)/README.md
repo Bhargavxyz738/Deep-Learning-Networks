@@ -70,7 +70,7 @@ A sophisticated architecture demands a sophisticated training regimen. The final
 
 The performance comparison starkly reveals the project's core lesson. The evaluation was performed using a separate, rigorous script (`evaluation.py`).
 
-| Metric                                        | Baseline Model (The Specialist)            | **Final Model (The Robust Generalist)**     |
+| Metric                                        | old_model.py (The Specialist)            | **new_model.py (The Robust Generalist)**     |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
 | **Training Focus**                            | Maximize accuracy on clean data            | **Maximize robustness & generalization**    |
 | **Exact Sequence Accuracy (Clean Data)**      | **99.25%** (Excellent but brittle)         | 97.50% (Slightly lower but reliable)      |
